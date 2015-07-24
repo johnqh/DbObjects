@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312193F41B113C9600F0D102 /* DbAppObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 312193F31B113C9600F0D102 /* DbAppObjectCache.m */; };
+		312BCBE91B1EA0FE00BFAB8F /* DbOperatorSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCBE81B1EA0FE00BFAB8F /* DbOperatorSearchTerm.m */; };
+		31E32C1E1A43CE61008FE9B7 /* DbConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E32C1D1A43CE61008FE9B7 /* DbConfiguration.m */; };
+		513EF9F91B0ECCB9002ADFEF /* DbObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EF9F81B0ECCB9002ADFEF /* DbObjectCache.m */; };
+		51D5688119AA58050041CD39 /* DbDatabases.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D5688019AA58050041CD39 /* DbDatabases.m */; };
+		51D5688219AA58050041CD39 /* DbDatabases.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D5688019AA58050041CD39 /* DbDatabases.m */; };
+		51E3E03619A9830100785900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E3E03519A9830100785900 /* Foundation.framework */; };
+		51E3E04419A9830200785900 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E3E04319A9830200785900 /* XCTest.framework */; };
+		51E3E04519A9830200785900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E3E03519A9830100785900 /* Foundation.framework */; };
+		51E3E04719A9830200785900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E3E04619A9830200785900 /* UIKit.framework */; };
+		51E3E04A19A9830200785900 /* libDbObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E3E03219A9830100785900 /* libDbObjects.a */; };
+		51E3E05019A9830200785900 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51E3E04E19A9830200785900 /* InfoPlist.strings */; };
+		51E3E05219A9830200785900 /* DbObjectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E05119A9830200785900 /* DbObjectsTests.m */; };
+		51E3E09019A9833F00785900 /* DbCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06519A9833F00785900 /* DbCollection.m */; };
+		51E3E09119A9833F00785900 /* DbCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06519A9833F00785900 /* DbCollection.m */; };
+		51E3E09219A9833F00785900 /* DbDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06719A9833F00785900 /* DbDatabase.m */; };
+		51E3E09319A9833F00785900 /* DbDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06719A9833F00785900 /* DbDatabase.m */; };
+		51E3E09619A9833F00785900 /* DbField.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06B19A9833F00785900 /* DbField.m */; };
+		51E3E09719A9833F00785900 /* DbField.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06B19A9833F00785900 /* DbField.m */; };
+		51E3E09819A9833F00785900 /* DbLogicSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06D19A9833F00785900 /* DbLogicSearchTerm.m */; };
+		51E3E09919A9833F00785900 /* DbLogicSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E06D19A9833F00785900 /* DbLogicSearchTerm.m */; };
+		51E3E09A19A9833F00785900 /* DbObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E07119A9833F00785900 /* DbObject.m */; };
+		51E3E09B19A9833F00785900 /* DbObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E07119A9833F00785900 /* DbObject.m */; };
+		51E3E0A019A9833F00785900 /* DbSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E07719A9833F00785900 /* DbSearchTerm.m */; };
+		51E3E0A119A9833F00785900 /* DbSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E07719A9833F00785900 /* DbSearchTerm.m */; };
+		51E3E0A219A9833F00785900 /* DbSortDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E07919A9833F00785900 /* DbSortDescriptor.m */; };
+		51E3E0A319A9833F00785900 /* DbSortDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E07919A9833F00785900 /* DbSortDescriptor.m */; };
+		51E3E0AA19A9833F00785900 /* DbIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08119A9833F00785900 /* DbIndex.m */; };
+		51E3E0AB19A9833F00785900 /* DbIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08119A9833F00785900 /* DbIndex.m */; };
+		51E3E0B019A9833F00785900 /* DbTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08719A9833F00785900 /* DbTable.m */; };
+		51E3E0B119A9833F00785900 /* DbTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08719A9833F00785900 /* DbTable.m */; };
+		51E3E0B219A9833F00785900 /* DbObjectUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08919A9833F00785900 /* DbObjectUtils.m */; };
+		51E3E0B319A9833F00785900 /* DbObjectUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08919A9833F00785900 /* DbObjectUtils.m */; };
+		51E3E0B419A9833F00785900 /* DbStringSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08B19A9833F00785900 /* DbStringSearchTerm.m */; };
+		51E3E0B519A9833F00785900 /* DbStringSearchTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E08B19A9833F00785900 /* DbStringSearchTerm.m */; };
+		51E3E0BD19A983F300785900 /* DbFileDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E0BC19A983F300785900 /* DbFileDatabase.m */; };
+		51E3E0BE19A983F300785900 /* DbFileDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E0BC19A983F300785900 /* DbFileDatabase.m */; };
+		51E3E0CE19A9887000785900 /* DbQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E0CD19A9887000785900 /* DbQuery.m */; };
+		51E3E0CF19A9887000785900 /* DbQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3E0CD19A9887000785900 /* DbQuery.m */; };
+		64F5A8D41AAE04B600FCB8BA /* DbCollectionMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F5A8D31AAE04B600FCB8BA /* DbCollectionMarker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51E3E04819A9830200785900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51E3E02A19A9830100785900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E3E03119A9830100785900;
+			remoteInfo = DbObjects;
+		};
+		64C7C1771B01168000074FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64CF11DC1B0115F20071B897;
+			remoteInfo = DbBaseUtils;
+		};
+		64C7C1791B01168000074FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64CF11E71B0115F20071B897;
+			remoteInfo = DbBaseUtilsTests;
+		};
+		64C7C1921B01175000074FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CF11DB1B0115F20071B897;
+			remoteInfo = DbBaseUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51E3E03019A9830100785900 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		312193F21B113C9600F0D102 /* DbAppObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbAppObjectCache.h; path = DbObjects/DbAppObjectCache.h; sourceTree = "<group>"; };
+		312193F31B113C9600F0D102 /* DbAppObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DbAppObjectCache.m; path = DbObjects/DbAppObjectCache.m; sourceTree = "<group>"; };
+		312BCBE71B1EA0FE00BFAB8F /* DbOperatorSearchTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbOperatorSearchTerm.h; sourceTree = "<group>"; };
+		312BCBE81B1EA0FE00BFAB8F /* DbOperatorSearchTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbOperatorSearchTerm.m; sourceTree = "<group>"; };
+		31E32C1C1A43CE61008FE9B7 /* DbConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbConfiguration.h; sourceTree = "<group>"; };
+		31E32C1D1A43CE61008FE9B7 /* DbConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbConfiguration.m; sourceTree = "<group>"; };
+		513EF9F71B0ECCB9002ADFEF /* DbObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbObjectCache.h; path = DbObjects/DbObjectCache.h; sourceTree = "<group>"; };
+		513EF9F81B0ECCB9002ADFEF /* DbObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DbObjectCache.m; path = DbObjects/DbObjectCache.m; sourceTree = "<group>"; };
+		51D5687F19AA58050041CD39 /* DbDatabases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbDatabases.h; sourceTree = "<group>"; };
+		51D5688019AA58050041CD39 /* DbDatabases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbDatabases.m; sourceTree = "<group>"; };
+		51E3E03219A9830100785900 /* libDbObjects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDbObjects.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E3E03519A9830100785900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		51E3E03919A9830200785900 /* DbObjects-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DbObjects-Prefix.pch"; sourceTree = "<group>"; };
+		51E3E04219A9830200785900 /* DbObjectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DbObjectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E3E04319A9830200785900 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		51E3E04619A9830200785900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		51E3E04D19A9830200785900 /* DbObjectsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DbObjectsTests-Info.plist"; sourceTree = "<group>"; };
+		51E3E04F19A9830200785900 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		51E3E05119A9830200785900 /* DbObjectsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DbObjectsTests.m; sourceTree = "<group>"; };
+		51E3E06419A9833F00785900 /* DbCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbCollection.h; sourceTree = "<group>"; };
+		51E3E06519A9833F00785900 /* DbCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbCollection.m; sourceTree = "<group>"; };
+		51E3E06619A9833F00785900 /* DbDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbDatabase.h; sourceTree = "<group>"; };
+		51E3E06719A9833F00785900 /* DbDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbDatabase.m; sourceTree = "<group>"; };
+		51E3E06A19A9833F00785900 /* DbField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbField.h; sourceTree = "<group>"; };
+		51E3E06B19A9833F00785900 /* DbField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbField.m; sourceTree = "<group>"; };
+		51E3E06C19A9833F00785900 /* DbLogicSearchTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbLogicSearchTerm.h; sourceTree = "<group>"; };
+		51E3E06D19A9833F00785900 /* DbLogicSearchTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbLogicSearchTerm.m; sourceTree = "<group>"; };
+		51E3E06E19A9833F00785900 /* DbObjectObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbObjectObserver.h; sourceTree = "<group>"; };
+		51E3E06F19A9833F00785900 /* DbObjects-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DbObjects-Prefix.pch"; sourceTree = "<group>"; };
+		51E3E07019A9833F00785900 /* DbObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbObject.h; sourceTree = "<group>"; };
+		51E3E07119A9833F00785900 /* DbObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbObject.m; sourceTree = "<group>"; };
+		51E3E07619A9833F00785900 /* DbSearchTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbSearchTerm.h; sourceTree = "<group>"; };
+		51E3E07719A9833F00785900 /* DbSearchTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbSearchTerm.m; sourceTree = "<group>"; };
+		51E3E07819A9833F00785900 /* DbSortDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbSortDescriptor.h; sourceTree = "<group>"; };
+		51E3E07919A9833F00785900 /* DbSortDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbSortDescriptor.m; sourceTree = "<group>"; };
+		51E3E08019A9833F00785900 /* DbIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbIndex.h; sourceTree = "<group>"; };
+		51E3E08119A9833F00785900 /* DbIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbIndex.m; sourceTree = "<group>"; };
+		51E3E08619A9833F00785900 /* DbTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbTable.h; sourceTree = "<group>"; };
+		51E3E08719A9833F00785900 /* DbTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbTable.m; sourceTree = "<group>"; };
+		51E3E08819A9833F00785900 /* DbObjectUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbObjectUtils.h; sourceTree = "<group>"; };
+		51E3E08919A9833F00785900 /* DbObjectUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbObjectUtils.m; sourceTree = "<group>"; };
+		51E3E08A19A9833F00785900 /* DbStringSearchTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbStringSearchTerm.h; sourceTree = "<group>"; };
+		51E3E08B19A9833F00785900 /* DbStringSearchTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbStringSearchTerm.m; sourceTree = "<group>"; };
+		51E3E0BB19A983F300785900 /* DbFileDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbFileDatabase.h; sourceTree = "<group>"; };
+		51E3E0BC19A983F300785900 /* DbFileDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbFileDatabase.m; sourceTree = "<group>"; };
+		51E3E0CC19A9887000785900 /* DbQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbQuery.h; sourceTree = "<group>"; };
+		51E3E0CD19A9887000785900 /* DbQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbQuery.m; sourceTree = "<group>"; };
+		64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DbBaseUtils.xcodeproj; path = ../DbBaseUtils/DbBaseUtils.xcodeproj; sourceTree = "<group>"; };
+		64F5A8D21AAE04B600FCB8BA /* DbCollectionMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbCollectionMarker.h; sourceTree = "<group>"; };
+		64F5A8D31AAE04B600FCB8BA /* DbCollectionMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbCollectionMarker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51E3E02F19A9830100785900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E3E03619A9830100785900 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E3E03F19A9830200785900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E3E04A19A9830200785900 /* libDbObjects.a in Frameworks */,
+				51E3E04419A9830200785900 /* XCTest.framework in Frameworks */,
+				51E3E04719A9830200785900 /* UIKit.framework in Frameworks */,
+				51E3E04519A9830200785900 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		513EF9F51B0ECC62002ADFEF /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				513EF9F71B0ECCB9002ADFEF /* DbObjectCache.h */,
+				513EF9F81B0ECCB9002ADFEF /* DbObjectCache.m */,
+				312193F21B113C9600F0D102 /* DbAppObjectCache.h */,
+				312193F31B113C9600F0D102 /* DbAppObjectCache.m */,
+			);
+			name = Cache;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		51D5687919AA57BB0041CD39 /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				51D5687F19AA58050041CD39 /* DbDatabases.h */,
+				51D5688019AA58050041CD39 /* DbDatabases.m */,
+				31E32C1C1A43CE61008FE9B7 /* DbConfiguration.h */,
+				31E32C1D1A43CE61008FE9B7 /* DbConfiguration.m */,
+			);
+			name = Management;
+			sourceTree = "<group>";
+		};
+		51E3E02919A9830100785900 = {
+			isa = PBXGroup;
+			children = (
+				64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */,
+				51E3E03719A9830200785900 /* DbObjects */,
+				51E3E04B19A9830200785900 /* DbObjectsTests */,
+				51E3E03419A9830100785900 /* Frameworks */,
+				51E3E03319A9830100785900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51E3E03319A9830100785900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E03219A9830100785900 /* libDbObjects.a */,
+				51E3E04219A9830200785900 /* DbObjectsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51E3E03419A9830100785900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E03519A9830100785900 /* Foundation.framework */,
+				51E3E04319A9830200785900 /* XCTest.framework */,
+				51E3E04619A9830200785900 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51E3E03719A9830200785900 /* DbObjects */ = {
+			isa = PBXGroup;
+			children = (
+				513EF9F51B0ECC62002ADFEF /* Cache */,
+				51D5687919AA57BB0041CD39 /* Management */,
+				51E3E0CB19A9883F00785900 /* Query */,
+				51E3E0C519A985FD00785900 /* Utils */,
+				51E3E0BA19A983C100785900 /* Database */,
+				51E3E0BF19A984E700785900 /* Table */,
+				51E3E0C419A9854000785900 /* Object */,
+				51E3E0C619A9861000785900 /* Search */,
+				51E3E12E19A98E6100785900 /* Sort */,
+				51E3E06E19A9833F00785900 /* DbObjectObserver.h */,
+				51E3E06F19A9833F00785900 /* DbObjects-Prefix.pch */,
+				51E3E03819A9830200785900 /* Supporting Files */,
+			);
+			path = DbObjects;
+			sourceTree = "<group>";
+		};
+		51E3E03819A9830200785900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E03919A9830200785900 /* DbObjects-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E3E04B19A9830200785900 /* DbObjectsTests */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E05119A9830200785900 /* DbObjectsTests.m */,
+				51E3E04C19A9830200785900 /* Supporting Files */,
+			);
+			path = DbObjectsTests;
+			sourceTree = "<group>";
+		};
+		51E3E04C19A9830200785900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E04D19A9830200785900 /* DbObjectsTests-Info.plist */,
+				51E3E04E19A9830200785900 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E3E0BA19A983C100785900 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E06619A9833F00785900 /* DbDatabase.h */,
+				51E3E06719A9833F00785900 /* DbDatabase.m */,
+				51E3E0BB19A983F300785900 /* DbFileDatabase.h */,
+				51E3E0BC19A983F300785900 /* DbFileDatabase.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		51E3E0BF19A984E700785900 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E06A19A9833F00785900 /* DbField.h */,
+				51E3E06B19A9833F00785900 /* DbField.m */,
+				51E3E08019A9833F00785900 /* DbIndex.h */,
+				51E3E08119A9833F00785900 /* DbIndex.m */,
+				51E3E08619A9833F00785900 /* DbTable.h */,
+				51E3E08719A9833F00785900 /* DbTable.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		51E3E0C419A9854000785900 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E07019A9833F00785900 /* DbObject.h */,
+				51E3E07119A9833F00785900 /* DbObject.m */,
+				51E3E06419A9833F00785900 /* DbCollection.h */,
+				51E3E06519A9833F00785900 /* DbCollection.m */,
+				64F5A8D21AAE04B600FCB8BA /* DbCollectionMarker.h */,
+				64F5A8D31AAE04B600FCB8BA /* DbCollectionMarker.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		51E3E0C519A985FD00785900 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E08819A9833F00785900 /* DbObjectUtils.h */,
+				51E3E08919A9833F00785900 /* DbObjectUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		51E3E0C619A9861000785900 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E07619A9833F00785900 /* DbSearchTerm.h */,
+				51E3E07719A9833F00785900 /* DbSearchTerm.m */,
+				51E3E08A19A9833F00785900 /* DbStringSearchTerm.h */,
+				51E3E08B19A9833F00785900 /* DbStringSearchTerm.m */,
+				51E3E06C19A9833F00785900 /* DbLogicSearchTerm.h */,
+				51E3E06D19A9833F00785900 /* DbLogicSearchTerm.m */,
+				312BCBE71B1EA0FE00BFAB8F /* DbOperatorSearchTerm.h */,
+				312BCBE81B1EA0FE00BFAB8F /* DbOperatorSearchTerm.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		51E3E0CB19A9883F00785900 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E0CC19A9887000785900 /* DbQuery.h */,
+				51E3E0CD19A9887000785900 /* DbQuery.m */,
+			);
+			name = Query;
+			sourceTree = "<group>";
+		};
+		51E3E12E19A98E6100785900 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				51E3E07819A9833F00785900 /* DbSortDescriptor.h */,
+				51E3E07919A9833F00785900 /* DbSortDescriptor.m */,
+			);
+			name = Sort;
+			sourceTree = "<group>";
+		};
+		64C7C1721B01168000074FE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64C7C1781B01168000074FE8 /* libDbBaseUtils.a */,
+				64C7C17A1B01168000074FE8 /* DbBaseUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51E3E03119A9830100785900 /* DbObjects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E3E05519A9830200785900 /* Build configuration list for PBXNativeTarget "DbObjects" */;
+			buildPhases = (
+				51E3E02E19A9830100785900 /* Sources */,
+				51E3E02F19A9830100785900 /* Frameworks */,
+				51E3E03019A9830100785900 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C7C1931B01175000074FE8 /* PBXTargetDependency */,
+			);
+			name = DbObjects;
+			productName = DbObjects;
+			productReference = 51E3E03219A9830100785900 /* libDbObjects.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		51E3E04119A9830200785900 /* DbObjectsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E3E05819A9830200785900 /* Build configuration list for PBXNativeTarget "DbObjectsTests" */;
+			buildPhases = (
+				51E3E03E19A9830200785900 /* Sources */,
+				51E3E03F19A9830200785900 /* Frameworks */,
+				51E3E04019A9830200785900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51E3E04919A9830200785900 /* PBXTargetDependency */,
+			);
+			name = DbObjectsTests;
+			productName = DbObjectsTests;
+			productReference = 51E3E04219A9830200785900 /* DbObjectsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51E3E02A19A9830100785900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Sudobility;
+			};
+			buildConfigurationList = 51E3E02D19A9830100785900 /* Build configuration list for PBXProject "DbObjects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 51E3E02919A9830100785900;
+			productRefGroup = 51E3E03319A9830100785900 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 64C7C1721B01168000074FE8 /* Products */;
+					ProjectRef = 64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				51E3E03119A9830100785900 /* DbObjects */,
+				51E3E04119A9830200785900 /* DbObjectsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		64C7C1781B01168000074FE8 /* libDbBaseUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDbBaseUtils.a;
+			remoteRef = 64C7C1771B01168000074FE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64C7C17A1B01168000074FE8 /* DbBaseUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DbBaseUtilsTests.xctest;
+			remoteRef = 64C7C1791B01168000074FE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51E3E04019A9830200785900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E3E05019A9830200785900 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51E3E02E19A9830100785900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E3E09219A9833F00785900 /* DbDatabase.m in Sources */,
+				51E3E09019A9833F00785900 /* DbCollection.m in Sources */,
+				51E3E0A019A9833F00785900 /* DbSearchTerm.m in Sources */,
+				64F5A8D41AAE04B600FCB8BA /* DbCollectionMarker.m in Sources */,
+				51E3E0A219A9833F00785900 /* DbSortDescriptor.m in Sources */,
+				31E32C1E1A43CE61008FE9B7 /* DbConfiguration.m in Sources */,
+				51E3E09A19A9833F00785900 /* DbObject.m in Sources */,
+				312BCBE91B1EA0FE00BFAB8F /* DbOperatorSearchTerm.m in Sources */,
+				51E3E0B419A9833F00785900 /* DbStringSearchTerm.m in Sources */,
+				51E3E0AA19A9833F00785900 /* DbIndex.m in Sources */,
+				51D5688119AA58050041CD39 /* DbDatabases.m in Sources */,
+				51E3E09819A9833F00785900 /* DbLogicSearchTerm.m in Sources */,
+				51E3E09619A9833F00785900 /* DbField.m in Sources */,
+				513EF9F91B0ECCB9002ADFEF /* DbObjectCache.m in Sources */,
+				312193F41B113C9600F0D102 /* DbAppObjectCache.m in Sources */,
+				51E3E0B019A9833F00785900 /* DbTable.m in Sources */,
+				51E3E0CE19A9887000785900 /* DbQuery.m in Sources */,
+				51E3E0B219A9833F00785900 /* DbObjectUtils.m in Sources */,
+				51E3E0BD19A983F300785900 /* DbFileDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E3E03E19A9830200785900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E3E0A319A9833F00785900 /* DbSortDescriptor.m in Sources */,
+				51E3E09719A9833F00785900 /* DbField.m in Sources */,
+				51E3E0A119A9833F00785900 /* DbSearchTerm.m in Sources */,
+				51E3E0B119A9833F00785900 /* DbTable.m in Sources */,
+				51E3E09B19A9833F00785900 /* DbObject.m in Sources */,
+				51D5688219AA58050041CD39 /* DbDatabases.m in Sources */,
+				51E3E0B519A9833F00785900 /* DbStringSearchTerm.m in Sources */,
+				51E3E0AB19A9833F00785900 /* DbIndex.m in Sources */,
+				51E3E05219A9830200785900 /* DbObjectsTests.m in Sources */,
+				51E3E09119A9833F00785900 /* DbCollection.m in Sources */,
+				51E3E0B319A9833F00785900 /* DbObjectUtils.m in Sources */,
+				51E3E09919A9833F00785900 /* DbLogicSearchTerm.m in Sources */,
+				51E3E0CF19A9887000785900 /* DbQuery.m in Sources */,
+				51E3E0BE19A983F300785900 /* DbFileDatabase.m in Sources */,
+				51E3E09319A9833F00785900 /* DbDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51E3E04919A9830200785900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51E3E03119A9830100785900 /* DbObjects */;
+			targetProxy = 51E3E04819A9830200785900 /* PBXContainerItemProxy */;
+		};
+		64C7C1931B01175000074FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DbBaseUtils;
+			targetProxy = 64C7C1921B01175000074FE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51E3E04E19A9830200785900 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51E3E04F19A9830200785900 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51E3E05319A9830200785900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../BaseUtils/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		51E3E05419A9830200785900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../BaseUtils/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51E3E05619A9830200785900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DbObjects.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../DbBaseUtils/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		51E3E05719A9830200785900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DbObjects.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../DbBaseUtils/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		51E3E05919A9830200785900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DbObjectsTests/DbObjectsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		51E3E05A19A9830200785900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
+				INFOPLIST_FILE = "DbObjectsTests/DbObjectsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51E3E02D19A9830100785900 /* Build configuration list for PBXProject "DbObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E3E05319A9830200785900 /* Debug */,
+				51E3E05419A9830200785900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E3E05519A9830200785900 /* Build configuration list for PBXNativeTarget "DbObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E3E05619A9830200785900 /* Debug */,
+				51E3E05719A9830200785900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E3E05819A9830200785900 /* Build configuration list for PBXNativeTarget "DbObjectsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E3E05919A9830200785900 /* Debug */,
+				51E3E05A19A9830200785900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51E3E02A19A9830100785900 /* Project object */;
+}
