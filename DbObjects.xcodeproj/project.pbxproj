@@ -399,7 +399,7 @@
 		51E3E02A19A9830100785900 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Sudobility;
 			};
 			buildConfigurationList = 51E3E02D19A9830100785900 /* Build configuration list for PBXProject "DbObjects" */;
@@ -547,6 +547,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -566,7 +567,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../BaseUtils/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -602,7 +603,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../BaseUtils/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -618,7 +619,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../DbBaseUtils/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -635,7 +637,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../DbBaseUtils/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -657,6 +660,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "DbObjectsTests/DbObjectsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sudobility.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -673,6 +677,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
 				INFOPLIST_FILE = "DbObjectsTests/DbObjectsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sudobility.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
