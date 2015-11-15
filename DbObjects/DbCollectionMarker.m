@@ -137,8 +137,9 @@
 
 - (NSComparisonResult)compareObj1:(DbObject *)obj1 withObj2:(DbObject *)obj2 fieldName:(NSString *)fieldName ascending:(bool)ascending
 {
-    NSObject * value1 = [obj1 valueForKey:fieldName.lowercaseString];
-    NSObject * value2 = [obj2 valueForKey:fieldName.lowercaseString];
+    NSString * sqlFieldName = [DbObjectUtils sqlFieldName:fieldName];
+    NSObject * value1 = [obj1 valueForKey:sqlFieldName];
+    NSObject * value2 = [obj2 valueForKey:sqlFieldName];
     
     if (ascending)
     {
@@ -210,6 +211,7 @@
             }
             else
             {
+                [_collection satisfy:_entry];
                 [_collection removeObjectAtIndex:_index];
             }
         }

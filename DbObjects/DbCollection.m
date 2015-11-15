@@ -91,7 +91,8 @@
         NSString * searchString = _searchTerm.asString;
         if (whereString)
         {
-            whereString = [NSString stringWithFormat:@"%@ AND %@", whereString, searchString];
+            whereString = [whereString stringByReplacingOccurrencesOfString:@"WHERE " withString:@"WHERE ("];
+            whereString = [NSString stringWithFormat:@"%@ AND %@)", whereString, searchString];
         }
         else
         {

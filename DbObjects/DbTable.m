@@ -318,7 +318,7 @@ static void setTransformablePropertyImp(DbObject * self, SEL _cmd, NSData * valu
 
 - (DbField *)fieldWithName:(NSString *)name
 {
-    return [_fields objectForKey:name];
+    return [_fields objectForKey:[DbObjectUtils sqlFieldName:name]];
 }
 
 - (DbField *)autoIncrementField

@@ -236,7 +236,7 @@
             {
                 data = nil;
             }
-            [_writeData setObject:(data ? data : [NSNull null]) forKey:fieldName.lowercaseString];
+            [_writeData setObject:(data ? data : [NSNull null]) forKey:[DbObjectUtils sqlFieldName:fieldName]];
             if (mainThread)
             {
                 [self didChangeValueForKey:fieldName];
@@ -252,13 +252,13 @@
     id value = nil;
 	if (_writeData)
 	{
-		value = [_writeData objectForKey:fieldName.lowercaseString];
+		value = [_writeData objectForKey:[DbObjectUtils sqlFieldName:fieldName]];
 	}
     if (!value)
     {
         if (_readData)
         {
-            value = [_readData objectForKey:fieldName.lowercaseString];
+            value = [_readData objectForKey:[DbObjectUtils sqlFieldName:fieldName]];
         }
     }
     if (!value)

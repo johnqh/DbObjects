@@ -84,16 +84,30 @@
 
 - (bool)satisfy:(DbObject *)obj
 {
-    bool satisfy = true;
     if (_alternatives)
     {
-        for (int i = 0; satisfy && i < _alternatives.count; i ++)
+        if ([self.logicString isEqualToString: @"AND"])
         {
-            DbSearchTerm * search = (DbSearchTerm *)_alternatives[i];
-            satisfy = [search satisfy:obj];
+            bool satisfy = true;
+            for (int i = 0; satisfy && i < _alternatives.count; i ++)
+            {
+                DbSearchTerm * search = (DbSearchTerm *)_alternatives[i];
+                satisfy = [search satisfy:obj];
+            }
+            return satisfy;
+        }
+        else
+        {
+            bool satisfy = false;
+            for (int i = 0; !satisfy && i < _alternatives.count; i ++)
+            {
+                DbSearchTerm * search = (DbSearchTerm *)_alternatives[i];
+                satisfy = [search satisfy:obj];
+            }
+            return satisfy;
         }
     }
-    return satisfy;
+    return true;
 }
 
 - (void)dealloc
