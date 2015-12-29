@@ -34,7 +34,21 @@
         {
             NSDate * date1 = (NSDate *)value1;
             NSDate * date2 = (NSDate *)value2;
-            return [date1 compare:date2];
+            long secs1 = [date1 timeIntervalSince1970];
+            long secs2 = [date2 timeIntervalSince1970];
+            long diff = secs2 - secs1;
+            if (diff > 0)
+            {
+                return NSOrderedDescending;
+            }
+            else if (diff < 0)
+            {
+                return NSOrderedAscending;
+            }
+            else
+            {
+                return NSOrderedSame;
+            }
         }
             
         case kDbTypeString:

@@ -159,6 +159,10 @@
     {
         if (_writeData)
         {
+            if (_saved)
+            {
+                [self.db.cache markInCache:self];
+            }
             if (!_readData)
             {
                 self.readData = [NSMutableDictionary dictionaryWithCapacity:self.table.fields.count];
