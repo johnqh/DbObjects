@@ -11,12 +11,13 @@
 @class DbDatabase;
 @class DbObject;
 @class DbField;
+@class DbIndex;
 
 @interface DbTable : NSObject
 
 @property (nonatomic, weak) DbDatabase * db;
-@property (nonatomic, strong) NSMutableDictionary * fields;
-@property (nonatomic, strong) NSMutableDictionary * indice;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, DbField *> * fields;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, DbIndex *> * indice;
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic, strong) NSString * className;
 @property (nonatomic) bool syncable;

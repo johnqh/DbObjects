@@ -11,7 +11,7 @@
 @interface DbIndex : NSObject
 
 @property (nonatomic, strong) NSString * name;
-@property (nonatomic, strong) NSMutableArray * fields;
+@property (nonatomic, strong) NSMutableArray<NSString *> * fields;
 
 - (id)initWithName:(NSString *)name fields:(NSMutableArray *)fields;
 - (id)initWithSchema:(NSDictionary *)dictionary;

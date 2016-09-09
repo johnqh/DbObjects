@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @class DbObjectCache;
+@class DbTable;
 @class DbQuery;
 
 @interface DbDatabase : NSObject
 
-@property (nonatomic, strong) NSMutableDictionary * tables;
-@property (nonatomic, strong) NSArray * schemas;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, DbTable *> * tables;
+@property (nonatomic, strong) NSArray<NSDictionary *> * schemas;
 @property (nonatomic, readonly) DbQuery * query;
 @property (nonatomic, readonly) DbObjectCache * cache;
 
-- (NSArray *)loadXmlSchemaFile:(NSString *)schemaFile;
-- (void)loadSchemas:(NSArray *)schema;
+- (NSArray<NSDictionary *> *)loadXmlSchemaFile:(NSString *)schemaFile;
+- (void)loadSchemas:(NSArray<NSDictionary *> *)schema;
 
 - (DbQuery *)createQuery;
 - (DbObjectCache *)createCache;

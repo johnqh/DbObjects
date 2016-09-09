@@ -42,7 +42,7 @@
     return _cache;
 }
 
-- (NSArray *)loadXmlSchemaFile:(NSString *)schemaFile
+- (NSArray<NSDictionary *> *)loadXmlSchemaFile:(NSString *)schemaFile
 {
     NSStringEncoding encoding = NSUTF8StringEncoding;
     NSString * schemaText = [NSString stringWithContentsOfFile:schemaFile usedEncoding:&encoding error:nil];
@@ -52,7 +52,7 @@
     return [self schemaArray:[schemaModel objectForKey:@"entity"]];
 }
 
-- (NSArray *)schemaArray:(id)entity
+- (NSArray<NSDictionary *> *)schemaArray:(id)entity
 {
     if ([entity isKindOfClass:[NSArray class]])
     {
@@ -64,7 +64,7 @@
     }
 }
 
-- (void)loadSchemas:(NSArray *)schema
+- (void)loadSchemas:(NSArray<NSDictionary *> *)schema
 {
     for (NSDictionary * schemaTable in schema)
     {

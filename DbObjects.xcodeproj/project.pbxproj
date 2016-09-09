@@ -93,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3114A24F1D7C9CF300740EED /* DbCollection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DbCollection+Private.h"; sourceTree = "<group>"; };
 		312193F21B113C9600F0D102 /* DbAppObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbAppObjectCache.h; path = DbObjects/DbAppObjectCache.h; sourceTree = "<group>"; };
 		312193F31B113C9600F0D102 /* DbAppObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DbAppObjectCache.m; path = DbObjects/DbAppObjectCache.m; sourceTree = "<group>"; };
 		312BCBE71B1EA0FE00BFAB8F /* DbOperatorSearchTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbOperatorSearchTerm.h; sourceTree = "<group>"; };
@@ -297,6 +298,7 @@
 				51E3E07119A9833F00785900 /* DbObject.m */,
 				51E3E06419A9833F00785900 /* DbCollection.h */,
 				51E3E06519A9833F00785900 /* DbCollection.m */,
+				3114A24F1D7C9CF300740EED /* DbCollection+Private.h */,
 				64F5A8D21AAE04B600FCB8BA /* DbCollectionMarker.h */,
 				64F5A8D31AAE04B600FCB8BA /* DbCollectionMarker.m */,
 			);

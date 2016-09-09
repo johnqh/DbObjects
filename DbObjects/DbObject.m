@@ -15,14 +15,6 @@
 #import "DbDateUtils.h"
 #import "DbObjectCache.h"
 
-@interface DbObject()
-{
-    bool _saved;
-    NSMutableDictionary * _writeData;
-}
-
-@end
-
 @implementation DbObject
 
 + (NSComparisonResult)compare:(NSObject *)value1 to:(NSObject *)value2
@@ -72,12 +64,7 @@
     }
 }
 
-- (NSMutableDictionary *)writeData
-{
-    return _writeData;
-}
-
-- (void)setWriteData:(NSMutableDictionary *)writeData
+- (void)setWriteData:(NSMutableDictionary<NSString *, id> *)writeData
 {
     if (_writeData != writeData)
     {
@@ -104,11 +91,6 @@
             }
         }
     }
-}
-
-- (bool)saved
-{
-    return _saved;
 }
 
 - (void)setSaved:(bool)saved
@@ -159,10 +141,6 @@
     {
         if (_writeData)
         {
-            if (_saved)
-            {
-                [self.db.cache markInCache:self];
-            }
             if (!_readData)
             {
                 self.readData = [NSMutableDictionary dictionaryWithCapacity:self.table.fields.count];
@@ -399,6 +377,72 @@
                 
             default:
                 return nil;
+        }
+    }
+    return nil;
+}
+
+- (NSString *)formattedData:(NSString *)fieldName
+{
+    if (self.verifyTable)
+    {
+        DbField * field = [_table fieldWithName:fieldName];
+        if (field)
+        {
+            NSObject * value = [self valueForKey:fieldName];
+            switch (field.type)
+            {
+                case kDbTypeBoolean:
+                {
+                    NSNumber * boolean = (NSNumber *)value;
+                    return boolean.boolValue ? @"Yes" : @"No";
+                }
+                    
+                case kDbTypeDate:
+                {
+                    NSDate * date = (NSDate *)value;
+                    return date.description;
+                }
+                    
+                case kDbTypeDateTime:
+                {
+                    NSDate * date = (NSDate *)value;
+                    return date.description;
+                }
+                    
+                case kDbTypeFloat:
+                {
+                    NSNumber * number = (NSNumber *)value;
+                    return number.description;
+                }
+                    
+                case kDbTypeInt16:
+                {
+                    NSNumber * number = (NSNumber *)value;
+                    return number.description;
+                }
+                    
+                case kDbTypeInt32:
+                {
+                    NSNumber * number = (NSNumber *)value;
+                    return number.description;
+                }
+                    
+                case kDbTypeInt64:
+                {
+                    NSNumber * number = (NSNumber *)value;
+                    return number.description;
+                }
+                    
+                case kDbTypeString:
+                {
+                    NSString * text = (NSString *)value;
+                    return text;
+                }
+                    
+                default:
+                    return nil;
+            }
         }
     }
     return nil;

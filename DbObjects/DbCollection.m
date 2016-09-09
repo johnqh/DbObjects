@@ -7,21 +7,16 @@
 //
 
 #import "DbCollection.h"
+#import "DbCollection+Private.h"
 #import "DbDatabase.h"
 #import "DbTable.h"
 #import "DbQuery.h"
 #import "DbOperatorSearchTerm.h"
 #import "DbObjectCache.h"
 
-@interface DbCollection()
-
-@property (nonatomic, strong) DbObject * example;
-@property (nonatomic, strong) NSMutableArray * entries;
-@property (nonatomic, strong) NSMutableArray * sortings;
-
-@end
-
 @implementation DbCollection
+
+@synthesize entries = _entries;
 
 - (bool)isCollection
 {

@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 John Huang. All rights reserved.
 //
 
+#import "InteractiveObject.h"
 #import "DbObject.h"
 #import "DbSortDescriptor.h"
 
@@ -15,7 +16,7 @@ typedef NSComparisonResult (^ SortBlock)(id obj1, id obj2);
 
 @class DbSearchTerm;
 
-@interface DbCollection : DbObject
+@interface DbCollection : DbObject<InteractiveArray>
 
 @property (nonatomic, strong) NSString * entityType;
 @property (nonatomic, strong) DbSearchTerm * searchTerm;

@@ -7,17 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InteractiveObject.h"
 
 @class DbDatabase;
 @class DbTable;
 
-@interface DbObject : NSObject
+@interface DbObject : NSObject<InteractiveObject>
 
 @property (nonatomic, weak) DbDatabase * db;
 @property (nonatomic, weak) DbTable * table;
-@property (nonatomic, strong) NSMutableDictionary * readData;
-@property (nonatomic, strong) NSMutableDictionary * writeData;
-@property (nonatomic) bool saved;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, id> * readData;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, id> * writeData;
+@property (nonatomic, assign) bool saved;
 
 @property (nonatomic, readonly) bool modified;
 @property (nonatomic, readonly) NSString * whereClause;
@@ -62,6 +63,8 @@
 - (void)setDateTime:(NSDate *)value forKey:(NSString *)fieldName;
 
 - (NSObject *)valueForKey:(NSString *)fieldName;
+
+- (NSString *)formattedData:(NSString *)fieldName;
 
 - (void)refresh:(DbObject *)obj;
 
