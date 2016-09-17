@@ -50,6 +50,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3114A40E1D83A60E00740EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3114A4091D83A60D00740EED /* BaseUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51E3E0D919A98B6700785900;
+			remoteInfo = BaseUtils;
+		};
+		3114A4101D83A60E00740EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3114A4091D83A60D00740EED /* BaseUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51E3E0E919A98B6800785900;
+			remoteInfo = BaseUtilsTests;
+		};
+		3114A4121D83A61E00740EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3114A4091D83A60D00740EED /* BaseUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E3E0D819A98B6700785900;
+			remoteInfo = BaseUtils;
+		};
 		51E3E04819A9830200785900 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51E3E02A19A9830100785900 /* Project object */;
@@ -94,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		3114A24F1D7C9CF300740EED /* DbCollection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DbCollection+Private.h"; sourceTree = "<group>"; };
+		3114A4091D83A60D00740EED /* BaseUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseUtils.xcodeproj; path = /Projects/johnqh/Code/ObjC/UIUtils/../BaseUtils/BaseUtils.xcodeproj; sourceTree = "<absolute>"; };
 		312193F21B113C9600F0D102 /* DbAppObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbAppObjectCache.h; path = DbObjects/DbAppObjectCache.h; sourceTree = "<group>"; };
 		312193F31B113C9600F0D102 /* DbAppObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DbAppObjectCache.m; path = DbObjects/DbAppObjectCache.m; sourceTree = "<group>"; };
 		312BCBE71B1EA0FE00BFAB8F /* DbOperatorSearchTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbOperatorSearchTerm.h; sourceTree = "<group>"; };
@@ -169,6 +191,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3114A40A1D83A60D00740EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3114A40F1D83A60E00740EED /* libBaseUtils.a */,
+				3114A4111D83A60E00740EED /* BaseUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		513EF9F51B0ECC62002ADFEF /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +226,7 @@
 		51E3E02919A9830100785900 = {
 			isa = PBXGroup;
 			children = (
+				3114A4091D83A60D00740EED /* BaseUtils.xcodeproj */,
 				64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */,
 				51E3E03719A9830200785900 /* DbObjects */,
 				51E3E04B19A9830200785900 /* DbObjectsTests */,
@@ -370,6 +402,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3114A4131D83A61E00740EED /* PBXTargetDependency */,
 				64C7C1931B01175000074FE8 /* PBXTargetDependency */,
 			);
 			name = DbObjects;
@@ -416,6 +449,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 3114A40A1D83A60D00740EED /* Products */;
+					ProjectRef = 3114A4091D83A60D00740EED /* BaseUtils.xcodeproj */;
+				},
+				{
 					ProductGroup = 64C7C1721B01168000074FE8 /* Products */;
 					ProjectRef = 64C7C1711B01168000074FE8 /* DbBaseUtils.xcodeproj */;
 				},
@@ -429,6 +466,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3114A40F1D83A60E00740EED /* libBaseUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBaseUtils.a;
+			remoteRef = 3114A40E1D83A60E00740EED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3114A4111D83A60E00740EED /* BaseUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BaseUtilsTests.xctest;
+			remoteRef = 3114A4101D83A60E00740EED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		64C7C1781B01168000074FE8 /* libDbBaseUtils.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -508,6 +559,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3114A4131D83A61E00740EED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaseUtils;
+			targetProxy = 3114A4121D83A61E00740EED /* PBXContainerItemProxy */;
+		};
 		51E3E04919A9830200785900 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 51E3E03119A9830100785900 /* DbObjects */;
@@ -620,7 +676,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -634,7 +690,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DbObjects/DbObjects-Prefix.pch";
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

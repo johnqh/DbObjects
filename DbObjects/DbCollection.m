@@ -156,7 +156,7 @@
 {
     if (_entries.count)
     {
-        return [_entries objectAtIndex:0];
+        return (DbObject *)[_entries objectAtIndex:0];
     }
     return nil;
 }
@@ -165,14 +165,14 @@
 {
     if (_entries.count)
     {
-        return [_entries objectAtIndex:_entries.count - 1];
+        return (DbObject *)[_entries objectAtIndex:_entries.count - 1];
     }
     return nil;
 }
 
 - (DbObject *)objectAtIndex:(NSUInteger)index
 {
-    return [_entries objectAtIndex:index];
+    return (DbObject *)[_entries objectAtIndex:index];
 }
 
 - (void)loadFromDbAsync:(RefreshBlock)completionBlock

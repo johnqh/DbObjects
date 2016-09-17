@@ -783,6 +783,26 @@
     }
 }
 
+- (NSString *)displayTitle
+{
+    return nil;
+}
+
+- (NSString *)displaySubtitle
+{
+    return nil;
+}
+
+- (NSString *)displayImageUrl
+{
+    return nil;
+}
+
+- (DbCollection *)children:(NSString *)name
+{
+    return nil;
+}
+
 - (void)dealloc
 {
     self.db = nil;
