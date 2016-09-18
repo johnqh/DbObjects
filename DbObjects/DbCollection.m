@@ -18,6 +18,11 @@
 
 @synthesize entries = _entries;
 
+- (NSString *)displaySubtitle
+{
+    return [NSString stringWithFormat:@"%d", (int)self.count];
+}
+
 - (bool)isCollection
 {
     return true;
