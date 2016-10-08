@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "InteractiveObject.h"
+#import "ModelObject.h"
 
 @class DbDatabase;
 @class DbTable;
 
-@interface DbObject : NSObject<InteractiveObject>
+@interface DbObject : NSObject<ModelObject>
 
 @property (nonatomic, weak) DbDatabase * db;
 @property (nonatomic, weak) DbTable * table;
