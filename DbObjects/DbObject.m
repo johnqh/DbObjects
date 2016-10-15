@@ -27,19 +27,19 @@
             {
                 NSNumber * number1 = (NSNumber *)value1;
                 NSNumber * number2 = (NSNumber *)value2;
-                return [number1  compare:number2];
+                return [number1 compare:number2];
             }
             else if ([value1 isKindOfClass:[NSString class]])
             {
                 NSString * string1 = (NSString *)value1;
                 NSString * string2 = (NSString *)value2;
-                return [string1  compare:string2];
+                return [string1 compare:string2];
             }
             else if ([value1 isKindOfClass:[NSDate class]])
             {
                 NSDate * date1 = (NSDate *)value1;
                 NSDate * date2 = (NSDate *)value2;
-                return [date1  compare:date2];
+                return [date1 compare:date2];
             }
             else
             {

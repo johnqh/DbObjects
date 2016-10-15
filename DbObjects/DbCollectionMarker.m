@@ -68,7 +68,7 @@
                 for (int i = 0; _index == NSNotFound && i < _collection.count; i ++)
                 {
                     DbObject * obj = [_collection objectAtIndex:i];
-                    if ([self compareKeysOfObj1:obj withObj2:entry])
+                    if (obj == entry || [self compareKeysOfObj1:obj withObj2:entry] == NSOrderedSame)
                     {
                         _index = i;
                     }
@@ -246,6 +246,7 @@
     else
     {
         [_collection insertObject:_entry atIndex:insertIndex];
+        self.index = insertIndex;
     }
 }
 
