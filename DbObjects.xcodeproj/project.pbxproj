@@ -630,6 +630,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../DbBaseUtils/**",
 					"$(SRCROOT)/../BaseUtils/**",
+					"$(SRCROOT)/../Architectural/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -672,6 +673,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../DbBaseUtils/**",
 					"$(SRCROOT)/../BaseUtils/**",
+					"$(SRCROOT)/../Architectural/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
